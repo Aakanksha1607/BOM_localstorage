@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.cards {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    background-color: #efed9b;
+    box-shadow: 3px 3px 20px  rgb(22, 22, 22);
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+.delete-btn, .seemore-btn {
+    background-color: #ff00f7;
+    color: white;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+
+}
+
+.delete-btn:hover {
+    background-color: #dc3545;
+}
+
+.seemore-btn:hover {
+    background-color: #28a745;
+}
+
+.box {
+    display: block;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+.box_details {
+    background-color: #dbdfea;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid black;
+    width: 80%;
+    width: 500px;
+    border-radius: 10px;
+   
+}
+.close {
+    color: #eb1111;
+    margin-left:95%;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover
+ {
+    color: black;
+    cursor: pointer;
+}
+#btn,#btn-2,#btn-3,#btn-4,#btn-5{
+    border: 0;
+    padding: 14px;
+    background-color: #4e84f9;
+    font-size: 20px;
+    border-radius: 10px;
+}
+#btn:hover,#btn-2:hover,#btn-3:hover,#btn-4:hover,#btn-5:hover{
+    background-color: rgb(140, 45, 242);
+}
+
+    </style>
+</head>
+<body>
+    <div>
+       <center> <button id="btn">Fetch Data</button>
+        <button id="btn-2">Electronics</button>
+        <button id="btn-3">Mens Fashion</button>
+        <button id="btn-4">Jewelery</button>
+        <button id="btn-5">Womens Fashion</button></center>
+        
+    </div>
+    <div id="output"></div>
+   
+   
+    <script src="./task1.js"></script>
+</body>
+</html>
